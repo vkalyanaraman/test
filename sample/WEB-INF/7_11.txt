@@ -1,0 +1,67 @@
+RELEASE ASK
+
+R14
+===
+Token service
+Defects
+response to Mike
+
+R15 SP1
+=======
+TLS changes-7/13
+(1) WHen can it be done
+Ebay integration-7/13
+(1)QA challenge
+
+
+5466 -7/11
+(1)Deployment done ready for QA?
+(1) Scope question-Mark/Mike
+(2) UI Help from AAron 
+
+R15 SP2
+=======
+ASN bulk upload-schema changes are we pursuing
+URL manipulation, testing only story-Check with Mike and hand off to QA
+hand off from Chandra for HTML
+Field addition to IIB-WMS dependency
+
+mahesh
+====
+6087 tomorrow
+Open defects
+5444 tomorrow-Discussion with Raj A on to which product will it come under
+Details for the new story
+Domains
+End date of stories
+Release date
+
+Mgmt
+====
+Checkpoint
+
+Scrum of scrum
+==============
+Tech lead availability for R16 SP1
+Sandbox
+
+Pre sprint
+==========
+API connect work
+
+Followup
+========
+Jay what is coming up
+Mahesh details
+SSL tech
+R14 sandbox
+Chris deck
+Upcoming milestone
+Sandbox followup
+API connect testing
+Mikes email to mahesh
+TLS changes down time
+
+Done
+====
+Nilesh-Demo to be cancelled
