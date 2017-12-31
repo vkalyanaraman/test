@@ -1,23 +1,39 @@
+<%@ page import="java.io.*,java.util.*,java.sql.*"%>
+<%@ page import="javax.servlet.http.*,javax.servlet.*" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>Sample Application JSP Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Database JSP1</title>
 </head>
-<body bgcolor=white>
-
-<table border="0">
+<body>
+ 
+ <sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
+     url="jdbc:mysql://localhost/GuruTest"
+     user="gururoot"  password="guru"/>
+ 
+<sql:query dataSource="${snapshot}" var="result">
+SELECT * from emp;
+</sql:query>
+ 
+<table>
 <tr>
-<td align=center>
-<img src="images/tomcat.gif">
-</td>
-<td>
-<h1>Sample Application JSP Page</h1>
-This is the output of a JSP page that is part of the Hello, World
-application.
-</td>
+   <th>ID</th>
+   <th>Name</th>
+ 
 </tr>
+<c:forEach var="row" items="${result.rows}">
+<tr>
+   <td><c:out value="${row.emp_id}"/></td>
+   <td><c:out value="${row.emp_name}"/></td>
+ 
+</tr>
+</c:forEach>
 </table>
-
-<%= new String("Hello!") %>
-
+ 
 </body>
 </html>
